@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgregist"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Daftar_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Register"
+                    android:textColor="@color/button"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Daftarkan akun anda untuk bergabung dengan kami"
+                    android:textColor="@color/text"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:padding="3dp">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="345dp"
+                android:layout_height="60dp"
+                android:background="@drawable/blue_border"
+                android:drawableLeft="@drawable/iconemail"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="@color/button" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:padding="3dp">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="345dp"
+                android:layout_height="60dp"
+                android:background="@drawable/blue_border"
+                android:drawableLeft="@drawable/iconlock"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:padding="8dp"
+                android:textColor="@color/button" />
+
+            <EditText
+                android:id="@+id/edt_konfirPassword"
+                android:layout_width="344dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/blue_border"
+                android:drawableLeft="@drawable/iconlock"
+                android:drawablePadding="10dp"
+                android:hint="Konfirmasi Password"
+                android:padding="8dp"
+                android:textColor="@color/button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_button"
+        android:text="Daftar"
+        android:textSize="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="atau"
+        android:textSize="20dp"
+        android:paddingTop="15dp"
+        android:padding="15dp"
+        android:paddingStart="160dp"/>
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_button"
+        android:text="sambungkan dengan Google"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/textClickableMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onTextClicked"
+            android:text="Sudah punya akun? Masuk"
+            android:paddingStart="100dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
